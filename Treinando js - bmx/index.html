@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Treinando JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Peças bmx</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>BMX</h2>
+            <div class="filtrar">
+                <label for="filtro-marca">Digite a marca:</label>
+                <input id="filtro-bmx" name="filtro-marca" type="text">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Quadro</th>
+                        <th>Guidão</th>
+                        <th>Aros</th>
+                        <th>Garfo</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-bmx">
+                    <tr class="peças">
+                        <td class="marca">Sunday</td>
+                        <td class="valor-quadro">1350</td>
+                        <td class="valor-guidao">250</td>                        
+                        <td class="valor-aros">430</td>
+                        <td class="valor-garfo">670</td>
+                        <td class="valor-total">0</td>
+                    </tr>
+                    <tr class="peças">
+                        <td class="marca">Flybikes</td>
+                        <td class="valor-quadro">1100</td>
+                        <td class="valor-guidao">550</td>
+                        <td class="valor-aros">330</td>
+                        <td class="valor-garfo">250</td>
+                        <td class="valor-total">0</td>
+                    </tr>
+                    <tr class="peças">
+                        <td class="marca">Odyssey</td>
+                        <td class="valor-quadro">2000</td>
+                        <td class="valor-guidao">400</td>
+                        <td class="valor-aros">700</td>
+                        <td class="valor-garfo">990</td>
+                        <td class="valor-total">0</td>
+                    </tr>
+                    <tr class="peças">
+                        <td class="marca">DRB</td>
+                        <td class="valor-quadro">850</td>
+                        <td class="valor-guidao">120</td>
+                        <td class="valor-aros">200</td>
+                        <td class="valor-garfo">250</td>
+                        <td class="valor-total">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <section class="container">
+        <h2>Adicionar nova bmx</h2>
+        <ul id=mensagem-erro>
+            
+        </ul>
+        <form id="form-add">
+            <div class="grupo">
+                <label for="marca">Marca:</label>
+                <input id="marca" name="marca" type="text" placeholder="digite a marca" class="campo-add"> 
+            </div>
+            <div class="grupo">
+                <label for="quadro">Valor do quadro:</label>
+                <input id="quadro" name="quadro" type="text" placeholder="digite o valor do quadro" class="campo-add"> 
+            </div>
+            <div class="grupo">
+                <label for="guidao">Valor do guidão:</label>
+                <input id="guidao" name="guidao" type="text" placeholder="digite o valor do guidão" class="campo-add"> 
+            </div>
+            <div class="grupo">
+                <label for="aros">Valor dos aros:</label>
+                <input id="aros" name="aros" type="text" placeholder="digite o valor dos aros" class="campo-add"> 
+            </div>
+            <div class="grupo">
+                <label for="garfo">Valor do garfo:</label>
+                <input id="garfo" name="garfo" type="text" placeholder="digite o valor do garfo" class="campo-add"> 
+            </div>
+            
+            <button id="adicionar-bmx" class="botao-principal">Adicionar</button>
+        </form>
+    </section>
+
+    <script src="js/calcula-valor.js"></script>
+    <script src="js/adiciona-bmx.js"></script>
+    <script src="js/remove-bmx.js"></script>
+    <script src="js/filtro.js"></script>
+
+</body>
